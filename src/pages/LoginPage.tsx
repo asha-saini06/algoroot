@@ -29,10 +29,10 @@ export const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100 flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
             {isLogin ? 'Welcome Back' : 'Create Account'}
           </h2>
           <p className="mt-2 text-gray-600">
@@ -58,7 +58,7 @@ export const LoginPage: React.FC = () => {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors"
+                className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-emerald-500 focus:ring-2 focus:ring-cyan-200 transition-colors"
                 required
               />
             </div>
@@ -72,7 +72,7 @@ export const LoginPage: React.FC = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors"
+              className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-emerald-500 focus:ring-2 focus:ring-cyan-200 transition-colors"
               required
             />
           </div>
@@ -85,14 +85,14 @@ export const LoginPage: React.FC = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors"
+              className="mt-1 block w-full rounded-lg border border-gray-200 px-4 py-2.5 focus:border-emerald-500 focus:ring-2 focus:ring-cyan-200 transition-colors"
               required
             />
           </div>
 
           <button
             type="submit"
-            className="w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
+            className="w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-emerald-600 to-cyan-500 hover:from-emerald-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition-colors"
           >
             {isLogin ? (
               <>
@@ -111,7 +111,7 @@ export const LoginPage: React.FC = () => {
         <div className="mt-6 text-center">
           <button
             onClick={() => setIsLogin(!isLogin)}
-            className="text-sm text-indigo-600 hover:text-indigo-500"
+            className="text-sm text-emerald-600 hover:text-cyan-600"
           >
             {isLogin
               ? "Don't have an account? Sign up"
